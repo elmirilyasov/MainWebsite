@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshelter</title>
+
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="wrapped-container">
+            <div class="navbar">
+                <div class="logo">
+                    <h3><a href="#">Petshelter</a></h3>
+                </div>
+
+                <ul class="nav">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="#">CATS</a></li>
+                    <li><a href="#">DOGS</a></li>
+                    <li><a href="#">VOLUNTEER</a></li>
+                    <!-- Blog with dropdown menu -->
+                    <li class="blog-main">
+                        <a href="#">BLOG</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="blog-nav">
+                            <li><a href="#">Blog Home</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">CONTACT</a></li>
+                    <!-- Dropdown with dropdown menu -->
+                    <li class="dropdown-main">
+                        <a href="#">DROPDOWN</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="dropdown-nav">
+                            <li><a href="#">Elements</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="level_2-main">
+                                <a href="#">Level 2</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <ul class="level_2-nav">
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="hamburger" onclick="toggleMenu(this)">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <ul class="mobile-nav" id="mobileMenu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CATS</a></li>
+                    <li><a href="#">DOGS</a></li>
+                    <li><a href="#">VOLUNTEER</a></li>
+                    <li class="blog-main">
+                        <a href="#">BLOG</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="blog-nav">
+                            <li><a href="#">Blog Home</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li class="dropdown-main">
+                        <a href="#">DROPDOWN</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="dropdown-nav">
+                            <li><a href="#">Elements</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="level_2-main">
+                                <a href="#">Level 2</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="level_2-nav">
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-slogan">
+            <h1>ADOPT US.</h1>
+            <h1>WE NEED YOUR HELP.</h1>
+
+            <p class="slogan">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, facilis velit earum excepturi consectetur repudiandae temporibus nemo eum ut officiis.
+            </p>
+
+            <div class="btn">
+                <p>FIND A PET TO ADOPT</p>
+            </div>
+        </div>
+    </header>
+
+        <main class="main">
+
+            <!-- SLIDER  -->
+
+            <section class="container slider-container">
+                <div class="slider-wrapper">
+                    <div id="slide-1"class="slider">
+                        <img  src="./img/c1.jpg.webp">
+                        <img  src="./img/c2.jpg.webp">
+                        <img  src="./img/c3.jpg.webp">
+                        <img  src="./img/c4.jpg.webp">
+                    </div>
+                    <div id="slide-2"class="slider">
+                        <img  src="./img/c1.jpg.webp">
+                        <img  src="./img/c2.jpg.webp">
+                        <img  src="./img/c3.jpg.webp">
+                        <img  src="./img/c4.jpg.webp">
+                    </div>
+                    <div id="slide-3"class="slider">
+                        <img  src="./img/c1.jpg.webp">
+                        <img  src="./img/c2.jpg.webp">
+                        <img  src="./img/c3.jpg.webp">
+                        <img  src="./img/c4.jpg.webp">
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </section>
+            <!-- Favourite Pet area -->
+            <section class="favourite-pet-area">
+                <div class="container">
+                    <div class="left">
+                        <h1>Please select your favourite pet</h1>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="primary-btn">Fill Adoption Form</a>
+                    </div>
+                </div>
+            </section>
+            <!-- HOME ABOUT AREA -->
+            <section class="home-about-area">
+                <div class="container">
+                    <div class="left">
+                        <img src="./img/about-img.jpg.webp">
+                    </div>
+                    <div class="right">
+                        <h1>Globally Connected by Large Network</h1>
+                        <h5>We are here to listen from you deliver exellence</h5>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                        </p>
+
+                        <a href="#" class="primary-btn">GET DETAILS</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDEO AREA -->
+            <section class="video-area">
+                <div class="container">
+                    <div class="play-btn">
+                        <a href="#"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                    <img src="img/video-bg.jpg.webp">
+                </div>
+                <div class="description">
+                    <h4>Watch this video how they live here</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                    </p>
+                </div>
+            </section>
+            <!-- Process area -->
+            <section class="process-area section-gap">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-60">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Process to adopt a pet</h1>
+                                <p>Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-process">
+                                <span class="lnr lnr-thumbs-up"></span>
+                                <a href="#">
+                                    <h4 class="mb-10">Pet Selection</h4>
+                                </a>
+                                <p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-process">
+                                <span class="lnr lnr-user"></span>
+                                <a href="#">
+                                    <h4 class="mb-10">Meetin Authority</h4>
+                                </a>
+                                <p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-process">
+                                <span class="lnr lnr-license"></span>
+                                <a href="#">
+                                    <h4 class="mb-10">Adopting Form Filling</h4>
+                                </a>
+                                <p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-process">
+                                <span class="lnr lnr-magic-wand"></span>
+                                <a href="#">
+                                    <h4 class="mb-10">Bring to new family</h4>
+                                </a>
+                                <p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonals area -->
+            <section class="testimonals-area section-gap">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-60">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Testimonials from our guardians</h1>
+                                <p>Who are in extremely love with eco friendly system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="slider-wrapper">
+                            <div id="picture-1" class="slider">
+                                <div class="items">
+                                    <div class="item">
+                                        <img src="img/t1.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4>Mark Alviro Wiens</h4>
+                                        <p>CEO at Google</p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/t2.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4>Mark Alviro Wiens</h4>
+                                        <p>CEO at Google</p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/t3.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4 >Mark Alviro Wiens</h4>
+                                        <p >CEO at Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="picture-2"class="slider">
+                                <div class="items">
+                                    <div class="item">
+                                        <img src="img/t1.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4>Mark Alviro Wiens</h4>
+                                        <p>CEO at Google</p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/t2.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4>Mark Alviro Wiens</h4>
+                                        <p>CEO at Google</p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/t3.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4 >Mark Alviro Wiens</h4>
+                                        <p >CEO at Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="picture-3"class="slider">
+                                <div class="items">
+                                    <div class="item">
+                                        <img src="img/t1.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4>Mark Alviro Wiens</h4>
+                                        <p>CEO at Google</p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/t2.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4>Mark Alviro Wiens</h4>
+                                        <p>CEO at Google</p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/t3.png.webp">
+                                        <p class="desc">     
+									        Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+                                        </p>
+                                        <h4>Mark Alviro Wiens</h4>
+                                        <p>CEO at Google</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#picture-1"></a>
+                            <a href="#picture-2"></a>
+                            <a href="#picture-3"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="calltoaction-area section-gap relative">
+				<div class="container">
+                    <h1>Want to help? Become a Volunteer</h1>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, assumenda, reprehenderit iste rerum, ab repellendus rem at omnis aliquid possimus excepturi corporis cum modi quam!</p>
+
+                    <div class="buttons">
+                        <div class="btn">
+                            <p>View PDF Details</p>
+                        </div>
+                        <div class="btn">
+                            <p>Register Now</p>
+                        </div>
+                    </div>
+                </div>
+			</section>
+        </main>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row pt-120 pb-80">
+                    <div class="col-1">
+                        <h6>About Us</h6>
+                        <p>
+                            Few would argue that, despite the advanc ements off eminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+
+                    <div class="col-1">
+                        <h6>Useful Links</h6>
+                        <div class="links-wrapped">
+                            <ul class="links-left">
+                                <a href="#"><li>Home</li></a>
+                                <a href="#"><li>Service</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Case Study</li></a>
+                            </ul>
+                            <ul class="links-right">
+                                <a href="#"><li>Pricing</li></a>
+                                <a href="#"><li>Team</li></a>
+                                <a href="#"><li>Blog</li></a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-1">
+                        <h6>Contact Us</h6>
+                        <div class="contacts">
+                            <div class="contact">
+                                <span class="lnr lnr-home"></span>
+                                <div class="contact-adress">
+                                    <h4 class="mb-10">Binghamton, New York</h4>
+                                    <p>4343 Hinkle Deegan Lake Road</p>
+                                </div>
+                            </div>
+
+                             <div class="contact">
+                                <span class="lnr lnr-phone-handset"></span>
+                                <div class="contact-adress">
+                                    <h4 class="mb-10">00 (953) 9865 562</h4>
+                                    <p>Mon to Fri 9am to 6 pm</p>
+                                </div>
+                            </div>
+
+                             <div class="contact">
+                                <span class="lnr lnr-envelope"></span>
+                                <div class="contact-adress">
+                                    <h4 class="mb-10">support@colorlib.com</h4>
+                                    <p>Send us your query anytime!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+header{
+    height: 50vh;
+}
+header::before{
+    height: 50vh;
+}
+
+.wrapped-container{
+    height: 50vh;
+    
+}
+.about-content{
+    position: relative;
+    justify-self: center;
+    top: 50%;
+}
+.about-content h1{
+    color:#fff;
+    font-size: 48px;
+    font-weight: 600;
+}
+.lnr{
+    color: #fff;
+    font-weight: 600;
+}
+.link-nav{
+    display: flex;
+    justify-content: space-around;
+}
