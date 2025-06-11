@@ -1,0 +1,124 @@
+.contact-area .container{
+    width: 60%;
+}
+.contact-area .single-contact{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contact-area .single-contact .lnr {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fab700;
+    margin-right: 30px;
+}
+.contact-area .single-contact h5 {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.contact-area .row{
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.gm-err-container{
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: #e8eaed;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.gm-err-content{
+    border-radius: 1px;
+    padding-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: static;
+    vertical-align: middle;
+    display: table-cell;
+}
+.gm-err-icon{
+    text-align: center;
+}
+.gm-err-title{
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #3c4043;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+.gm-err-message{
+    margin: 5px;
+    color: #3c4043;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+textarea{
+    overflow: auto;
+    resize: vertical;
+}
+.contact-area .column-2{
+    position: relative;
+    width: 65%;
+}
+.contact-area .form-area{
+    width: 100%;
+}
+.contact-area .sub-col-1{
+    width: 50%;
+}
+.contact-area .sub-col-2{
+    width: 40%;
+}
+.contact-area .form-area input , .contact-area .form-area textarea{
+    border-radius: 0;
+    font-size: 12px;
+}
+.contact-area .form-area input {
+    padding: 15px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.sub-col-3{
+    width: 100%;
+}
+.send-message{
+    background-color: #fab700;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    float: right;
+    cursor: pointer;
+    border: 1px solid #fab700;
+    transition: 0.5s;
+}
+.send-message p{
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.send-message:hover{
+    background-color: transparent;
+    transition: 0.5s;
+}
+.send-message:hover p{
+    color: #fab700;
+    transition: 0.5s;
+}

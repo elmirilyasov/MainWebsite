@@ -74,6 +74,14 @@
     .mobile-nav .level_2-main i{
         color: #fff;
     }
+    label{
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+    .mb-20{
+        margin-bottom: 20px;
+    }
+    
 
     /* HEADER */
 
@@ -838,6 +846,10 @@
 
     /* RESPONSIVE DESIGN */
     @media only screen and (max-width:960px) {
+        .main-slogan h1{
+            font-size: 36px;
+            display: inline-block;
+        }
         .nav{
             display: none;
             margin: 0;
@@ -856,9 +868,6 @@
             padding: 0;
             display: flex;
         }
-        .favourite-pet-area .container h1{
-            font-size: 20px;
-        }
         .home-about-area .container{
             display: block;
         }
@@ -866,5 +875,41 @@
             padding-right: 0;
             width: 100%;
         }
-        
+        .main .slider-container{
+            margin-top: 60px;
+        }
+        .slider-wrapper{
+            max-width: 690px;
+        }
+        .slider-wrapper img{
+            width: 90px;
+        }
+        .favourite-pet-area .container{
+            flex-direction: column;
+            gap: 50px;
+        }
+        .favourite-pet-area h1{
+            font-size: 90px;
+        }
+        .process-area .row{
+            flex-direction: column;
+        }
+        .testimonals-area .slider-wrapper{
+            max-width: 700px;
+        }
+        .calltoaction-area .container{
+            width: 100%;
+        }
+        footer .container{
+            max-width: 800px;
+        }
+        .column-2{
+            width: 100% !important;
+        }
+        .sub-col-1{
+            width: 100%;
+        }
+        .sub-col-2{
+            width: 100%;
+        }
     }
